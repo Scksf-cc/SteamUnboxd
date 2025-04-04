@@ -33,4 +33,13 @@ const App = () => {
     );
 };
 
+require('dotenv').config();
+
+// Access environment variables
+const geminiApiKey = process.env.API_KEY;
+const steamApiKey = process.env.STEAM_API_KEY;
+
+console.log('Gemini API Key:', geminiApiKey);
+console.log('Steam API Key:', steamApiKey);
+             
 export default App;
